@@ -1,0 +1,79 @@
+.App {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #1e1e1e;
+  color: #fff;
+  border-radius: 12px;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+  padding: 20px;
+}
+.App.light {
+  background: #f733cc;
+  color: #000000;
+}
+.App.dark {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+.App.dark button {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+.App.dark input {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+input {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  background: #2d2d2d;
+  color: #fff;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #2d2d2d;
+  color: white;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  flex: 1;
+  cursor: pointer;
+}
+
+li button {
+  background: #ef4444;
+  padding: 5px 10px;
+}
