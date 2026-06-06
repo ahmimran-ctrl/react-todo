@@ -19,7 +19,7 @@ function todoReducer(state, action) {
     case 'ADD_TASK':
       if (state.input.trim() === '') return state
       const newTask = { text: state.input.trim(), done: false, id: Date.now() }
-      return {state, tasks: [...state.tasks, newTask], input: '' }
+      return {...state, tasks: [...state.tasks, newTask], input: '' }
 
     case 'TOGGLE_TASK':
       return {
