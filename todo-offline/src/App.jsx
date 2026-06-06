@@ -1,9 +1,10 @@
+import { use, useEffect } from 'react'
 import './App.css'
 import { useTodo  } from './context/TodoContext'
 
 
 function App() {
-  const { state, dispatch } = useTodo()
+  let { state, dispatch } = useTodo()
   const { tasks, input, filter, theme, editingID, editText } = state
 
 
